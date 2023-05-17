@@ -1,10 +1,13 @@
 input.onButtonPressed(Button.A, function () {
-    turtle.pen(TurtlePenMode.Down)
-    for (let index = 0; index <= 3; index++) {
-        turtle.forward(1)
-        turtle.turnRight()
+    basic.showIcon(IconNames.Happy)
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showString("Hi")
+    for (let index = 0; index < 4; index++) {
+        basic.showIcon(IconNames.Diamond)
+        basic.showIcon(IconNames.SmallDiamond)
     }
 })
-basic.forever(function () {
-	
+input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.Sad)
 })
